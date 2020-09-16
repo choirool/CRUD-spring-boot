@@ -1,0 +1,43 @@
+POST http://localhost:8080/ticket/bookTickets
+Content-Type: application/json
+
+[
+    {
+        "amount": 200,
+        "category": "movie"
+    },
+    {
+        "amount": 300,
+        "category": "Travels"
+    }
+]
+
+###
+GET http://localhost:8080/ticket/getTickets
+
+###
+GET http://localhost:8080/library/index
+
+###
+POST http://localhost:8080/library/create
+Content-Type: application/json
+
+[
+    {
+        "name": "Library 1"
+    }
+]
+
+###
+GET http://localhost:8080/library/140
+
+###
+PUT http://localhost:8080/library/14/update
+Content-Type: application/json
+
+{
+    "name": "Library 9988"
+}
+
+###
+DELETE http://localhost:8080/library/delete/13
